@@ -164,7 +164,7 @@ function copyResult(){
 
     navigator.clipboard.writeText(text);
 
-    alert("Hasil berhasil disalin");
+    alert("Copied successfully!");
 }
 
 function saveHistory(ip,cidr){
