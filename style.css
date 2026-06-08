@@ -181,3 +181,12 @@ label{
     grid-template-columns:minmax(120px, 220px) 20px 1fr;
     gap:5px;
 }
+
+footer{
+    margin-top:25px;
+    padding-top:15px;
+    border-top:1px dashed #00ff41;
+    text-align:center;
+    font-family:'Courier New', monospace;
+    color:#00ff41;
+}
