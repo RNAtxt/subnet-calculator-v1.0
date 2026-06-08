@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator subnetting by rna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bootScreen"></div>
+<div class="container">
+    <h1>
+    SUBNET TERMINAL by RNA v1.0
+    <span class="cursor">█</span>
+</h1>
+
+
+    <label>> TARGET IP ADDRESS </label>
+    <input type="text" id="ip" placeholder="example: 192.168.10.28">
+    <label>> CIDR PREFIX</label>
+    <select id="cidr"></select>
+
+    <button onclick="hitungSubnet()">> EXECUTE</button>
+    <div id="loading" class="hidden">
+    <div class="terminal-loading">
+        <div id="loadingText"></div>
+    </div>
+    </div>
+    <div id="hasil"></div>
+    <div id="kelasIP"></div>
+
+<h3>Representasi Biner</h3>
+<div id="binaryResult"></div>
+
+<button onclick="copyResult()">
+    copy hasil
+</button>
+
+<h3>Riwayat</h3> 
+<div id="history"></div>
+
+<button onclick="toggleTheme()">
+    D/L Mode
+</button>
+
+</div>
+
+
+
+<script src="calcu.js"></script>
+
+</body>
+</html>
